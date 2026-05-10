@@ -1,0 +1,7 @@
+import { PdfUploader } from '../components/upload/pdf-uploader';
+import { PricingCard } from '../components/upload/pricing-card';
+import { Button } from '../components/ui/button';
+
+export default function LandingPage() {
+  return <main className="relative overflow-hidden px-5 py-8 sm:px-8 lg:px-12"><div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#6C5CE733,transparent_30%),radial-gradient(circle_at_80%_20%,#00D1FF22,transparent_30%)]" /><nav className="mx-auto flex max-w-7xl items-center justify-between"><span className="text-xl font-black tracking-tight">Fastcopy</span><Button>Get started</Button></nav><section className="mx-auto grid max-w-7xl items-center gap-10 py-20 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="mb-4 inline-flex rounded-full border border-brand-500/20 bg-brand-500/10 px-4 py-2 text-sm font-semibold text-brand-600">Secure hyperlocal printing</p><h1 className="max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">Upload once. Print nearby. Track every page.</h1><p className="mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">Fastcopy combines client-side PDF processing, server-authoritative pricing, signed downloads, and realtime vendor workflows for a premium Web-to-Print experience.</p><div className="mt-8 flex flex-wrap gap-3"><Button>Upload PDF</Button><Button className="bg-white text-ink dark:bg-white/10 dark:text-white">Explore vendors</Button></div></div><div className="grid gap-4"><PdfUploader /><PricingCard /></div></section></main>;
+}

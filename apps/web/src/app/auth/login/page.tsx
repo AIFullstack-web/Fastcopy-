@@ -1,0 +1,2 @@
+import { Button } from '../../../components/ui/button';
+export default function LoginPage() { return <main className="grid min-h-screen place-items-center p-5"><section className="glass-card w-full max-w-md rounded-[2rem] p-8"><h1 className="text-3xl font-black">Login with OTP</h1><p className="mt-2 text-sm text-slate-500">Passwordless JWT authentication with refresh tokens in secure cookies.</p><input className="mt-6 w-full rounded-2xl border bg-transparent p-3" placeholder="Phone number" /><Button className="mt-4 w-full">Request OTP</Button></section></main>; }

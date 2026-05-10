@@ -1,0 +1,2 @@
+const metrics = ['GMV', 'Orders', 'Active vendors', 'Disputes'];
+export default function AdminPage() { return <main className="min-h-screen p-5 sm:p-8"><h1 className="text-4xl font-black tracking-tight">Admin command center</h1><section className="mt-8 grid gap-4 md:grid-cols-4">{metrics.map((metric, index) => <article key={metric} className="glass-card rounded-3xl p-6"><p className="text-sm text-slate-500">{metric}</p><p className="mt-3 text-3xl font-black">{index === 0 ? '₹8.4L' : index === 1 ? '12.8k' : index === 2 ? '284' : '07'}</p></article>)}</section></main>; }

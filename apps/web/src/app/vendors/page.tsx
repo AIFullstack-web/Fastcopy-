@@ -1,0 +1,2 @@
+const vendors = ['Campus Copy Hub', 'Metro Print Lab', 'Express Spiral Studio'];
+export default function VendorsPage() { return <main className="min-h-screen p-5 sm:p-8"><h1 className="text-4xl font-black">Nearby vendors</h1><section className="mt-8 grid gap-4 md:grid-cols-3">{vendors.map(vendor => <article className="glass-card rounded-3xl p-6" key={vendor}><h2 className="font-bold">{vendor}</h2><p className="mt-2 text-sm text-slate-500">Verified, online, supports secure signed downloads.</p></article>)}</section></main>; }
