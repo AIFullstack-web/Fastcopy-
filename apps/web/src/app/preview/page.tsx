@@ -1,0 +1,1 @@
+export default function PreviewPage() { return <main className="min-h-screen p-5 sm:p-8"><h1 className="text-4xl font-black">PDF preview</h1><p className="mt-3 text-slate-600 dark:text-slate-300">Preview rendering, thumbnails, zoom controls, and password/corruption errors are powered by the shared PDF engine.</p></main>; }
